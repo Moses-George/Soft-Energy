@@ -260,6 +260,7 @@ const FormField = () => {
               <h1 className="font-semibold">*Days*</h1>
               {checkboxInputDaysData.map((data) => (
                 <CheckboxInput
+                key={data.id}
                   data={data}
                   value={data.name}
                   checked={checkedDays.includes(data.name)}
@@ -271,6 +272,7 @@ const FormField = () => {
               <h1 className="font-semibold">*Time*</h1>
               {checkboxInputTimeData.map((data) => (
                 <CheckboxInput
+                key={data.id}
                   data={data}
                   value={data.name}
                   checked={checkedTime.includes(data.name)}
