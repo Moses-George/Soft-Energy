@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        margin: 0;
+      }
+      body {
+        margin: 0;
+      }
+      .header {
+        background-color: #074942;
+        margin: 0;
+        padding: 2rem;
+        color: white;
+      }
+      .sub-header {
+        padding: 1rem;
+        box-shadow: 0 0 10px rgb(0 0 0 / 25%);
+        margin: 2rem 2rem 0;
+      }
+      .container {
+        padding: 2rem;
+        box-shadow: 0 0 10px rgb(0 0 0 / 25%);
+        margin: 2rem 1rem 0;
+      }
+      .label {
+        font-weight: 600;
+        font-size: large;
+      }
+      .info {
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 class="header">Solar Application Form</h1>
+      <h2 class="sub-header">New Aplication from, {{first_name}}</h2>
+      <section class="container">
+        <div class="">
+          <p class="label">First Name</p>
+          <p class="info">{{first_name}}</p>
+        </div>
+        <div class="">
+          <p class="label">Last Name</p>
+          <p class="info">{{last_name}}</p>
+        </div>
+        <div class="">
+          <p class="label">Phone Number</p>
+          <p class="info">{{phone}}</p>
+        </div>
+        <div class="">
+          <p class="label">Occupation</p>
+          <p class="info">{{occupation}}</p>
+        </div>
+        <div class="">
+          <p class="label">Payment Plan</p>
+          <p class="info">{{payment_plan}}</p>
+        </div>
+        <div class="">
+          <p class="label">Energy Needs</p>
+          <p class="info">{{energy_needs}}</p>
+        </div>
+        <div class="">
+          <p class="label">Days Available</p>
+          <p class="info">{{username}}</p>
+          <p class="info">{{username}}</p>
+          <p class="info">{{username}}</p>
+        </div>
+        <div class="">
+          <p class="label">Time Available</p>
+          <p class="info">{{username}}</p>
+          <p class="info">{{username}}</p>
+          <p class="info">{{username}}</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
