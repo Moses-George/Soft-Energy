@@ -28,7 +28,7 @@ const Inverter = () => {
       <MotionComponent
         as="h1"
         variants={textVariants}
-        className={`text-[#074942] text-2xl ${balgin_medium.className} `}
+        className={`text-[#074942] text-xl lg:text-2xl ${balgin_medium.className} `}
       >
         Inverter
       </MotionComponent>

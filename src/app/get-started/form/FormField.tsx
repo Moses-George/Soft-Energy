@@ -228,11 +228,11 @@ const FormField = () => {
     <section className="bg-[#7BECAB2E] opacity-[18] px-4 lg:px-8 py-12">
       <form
         action=""
-        className="bg-white rounded-lg space-y-8 px-4 lg:pl-12 py-12 lg:pr-28"
+        className="bg-white rounded-lg space-y-8 pl-4 pr-8 lg:pl-12 py-12 lg:pr-28"
       >
         <h1>Please enter the following Information</h1>
         <h1 className="font-medium">Personal Iformation</h1>
-        <div className="grid grid-cols-[1fr_1fr] lg:grid-cols-[1fr_1fr_1fr] gap-x-8 gap-y-6 lg:gap-y-0">
+        <div className="grid grid-cols-[1fr] lg:grid-cols-[1fr_1fr_1fr] gap-x-8 gap-y-6 lg:gap-y-0">
           {inputFieldData.map((data, id) => (
             <InputField
               data={data}
@@ -242,7 +242,7 @@ const FormField = () => {
             />
           ))}
         </div>
-        <div className="grid grid-cols-[1fr_1fr] lg:grid-cols-[1fr_1fr_1fr] items-center gap-x-8 gap-y-6">
+        <div className="grid grid-cols-[1fr] lg:grid-cols-[1fr_1fr_1fr] items-center gap-x-8 gap-y-6">
           {selectInputData.map((data, id) => (
             <SelectInput
               key={id}

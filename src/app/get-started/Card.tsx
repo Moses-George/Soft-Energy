@@ -21,7 +21,7 @@ const Card = ({ data, animationDelay }: productType) => {
       variants={fadeInVariants("up", animationDelay, 0.5)}
       className="bg-white rounded-lg flex h-fit"
     >
-      <div className="flex gap-x-4 items-center p-4">
+      <div className="flex gap-x-4 items-center p-4 text-sm lg:text-md">
         <Image src={data.img} alt="" width={120} height={80} />
         <div className="space-y-2">
           <h1 className={`font-bold firs-bold ${firs_medium.className}`}>
@@ -31,7 +31,7 @@ const Card = ({ data, animationDelay }: productType) => {
             <div key={index} className="flex gap-x-2 items-center">
               <div className="w-2 h-2 rounded-full bg-black" />
               <p
-                className={`disc firs-bold ${firs_regular.className}`}
+                className={`disc firs-bold ${firs_regular.className} text-gray-600`}
               >
                 {data}
               </p>

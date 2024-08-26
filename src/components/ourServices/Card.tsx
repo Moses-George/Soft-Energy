@@ -15,7 +15,7 @@ const Card = ({ header, text, icon, animationDelay }: CardPropType) => {
     <MotionComponent
       as="div"
       variants={zoomInVariants(animationDelay, 0.5)}
-      className="bg-white rounded-md firs-bold"
+      className="bg-white rounded-2xl firs-bold"
     >
       <Image
         className="ml-auto w-6 h-6"
@@ -24,7 +24,7 @@ const Card = ({ header, text, icon, animationDelay }: CardPropType) => {
         width={0}
         height={0}
       />
-      <div className="py-6 lg:py-12 pl-2 lg:pl-6 pr-2 lg:pr-8 space-y-4">
+      <div className="pt-6 lg:py-12 px-4 lg:pl-6  lg:pr-8 space-y-4 pb-8 lg:pb-0">
         <h2 className={` text-sm lg:text-[1rem] ${firs_bold.className} `}>{header}</h2>
         <p className={`text-gray-600 text-sm leading-7 ${firs_regular.className} `}>{text}</p>
       </div>

@@ -22,7 +22,7 @@ const OurServices = () => {
       <MotionComponent
         as="h1"
         variants={fadeInVariants("down", 0.1, 0.5)}
-        className={` ${balgin_regular.className} text-2xl lg:text-4xl text-center py-8 lg:py-16`}
+        className={` ${balgin_regular.className} text-xl lg:text-4xl text-center py-8 lg:py-16`}
       >
         Our Services
       </MotionComponent>
@@ -30,11 +30,11 @@ const OurServices = () => {
         <MotionComponent
           as="h2"
           variants={textVariants}
-          className={`text-xl lg:text-3xl text-[#074942] pl-4 lg:pl-0 ${balgin_bold.className} `}
+          className={`text-lg lg:text-3xl text-[#074942] pl-4 lg:pl-0 ${balgin_bold.className} `}
         >
           Solar Energy Solutions
         </MotionComponent>
-        <div className="grid grid-cols-[1fr_1fr] lg:grid-cols-[1fr_1fr_1fr] gap-x-4 lg:gap-x-8 gap-y-4 lg:gap-y-8 w-full px-4 lg:px-0 lg:w-[90%]">
+        <div className="grid grid-cols-[1fr] lg:grid-cols-[1fr_1fr_1fr] gap-x-4 lg:gap-x-8 gap-y-4 lg:gap-y-8 w-full px-8 lg:px-0 lg:w-[90%]">
           <Card
             animationDelay={0.1}
             header="Residential Installations"
@@ -78,7 +78,7 @@ const OurServices = () => {
           </div>
         </div>
       </div>
-      <div className="pl-6 pr-8 pt-6 lg:hidden">
+      <div className="pl-6 pr-8 pt-6 lg:hidden space-y-4">
         <MotionComponent
           as="h1"
           variants={textVariants}
@@ -89,7 +89,7 @@ const OurServices = () => {
         <MotionComponent
           as="p"
           variants={textVariants}
-          className="text-sm leading-[25px]"
+          className={`${firs_regular.className} text-sm leading-[25px]`}
         >
           Enjoy up to 12 months of installment payments, making solar energy
           accessible to all income levels.

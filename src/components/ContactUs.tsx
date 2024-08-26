@@ -15,7 +15,7 @@ const ContactUs = () => {
       <div className="space-y-4">
         <div className="flex gap-x-2 ">
           <h1
-            className={`text-[#074942] text-2xl lg:text-3xl ${balgin_bold.className} `}
+            className={`text-[#074942] text-xl lg:text-3xl ${balgin_bold.className} `}
           >
             Contact us
           </h1>
@@ -30,13 +30,13 @@ const ContactUs = () => {
         <div>
           <div className="space-y-4">
             <h1 className={` ${balgin_regular.className} text-lg`}>Get in touch with Us</h1>
-            <p className={`${firs_regular.className}`}>
+            <p className={`${firs_regular.className} text-sm lg:text-md`}>
               We'd love to hear from you! Contact us for inquiries, quotes, or
               more information.
             </p>
           </div>
         </div>
-        <div className={`${firs_regular.className}`}>
+        <div className={`${firs_regular.className} text-sm lg:text-md`}>
           <div className="flex gap-x-2 items-center">
             <MotionComponent as="div" variants={zoomInVariants(0.1, 0.5)}>
               <Image src={trippleArrow} alt="" width={60} height={20} />
@@ -75,15 +75,15 @@ const ContactUs = () => {
       <div className="pt-20 rounded-md space-y-4 border-l-solid border-l-4 pl-8 border-l-[#074942]">
         <div className="space-y-4">
           <h2 className={`${balgin_regular.className}`}>Follow us</h2>
-          <p className={`${firs_regular.className}`}>
+          <p className={`${firs_regular.className} text-sm lg:text-md`}>
             Stay connected through our social media channels
           </p>
         </div>
         <div className="flex gap-x-4">
-          <Image src={facebookIcon} alt="" width={40} height={40} />
-          <Image src={instagramIcon} alt="" width={40} height={40} />
-          <Image src={linkedInIcon} alt="" width={40} height={40} />
-          <Image src={xIcon} alt="" width={40} height={40} />
+          <Image className="w-8 h-8 lg:w-12 lg:w-12" src={facebookIcon} alt="" width={0} height={0} />
+          <Image className="w-8 h-8 lg:w-12 lg:w-12" src={instagramIcon} alt="" width={0} height={0} />
+          <Image className="w-8 h-8 lg:w-12 lg:w-12" src={linkedInIcon} alt="" width={0} height={0} />
+          <Image className="w-8 h-8 lg:w-12 lg:w-12" src={xIcon} alt="" width={0} height={0} />
         </div>
       </div>
     </section>

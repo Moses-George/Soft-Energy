@@ -68,7 +68,7 @@ const WhoWeServe = () => {
                 <MotionComponent
                   as="div"
                   variants={fadeInVariants("right", (index + 1) / 10, 0.5)}
-                  className="space-x-2 "
+                  className="space-x-2 text-sm lg:text-md"
                 >
                   <span className={`${firs_medium.className}`}>
                     {data.header}
@@ -123,7 +123,7 @@ const WhoWeServe = () => {
             height={0}
           />
           <p
-            className={`text-s text-justify text-relaxed ${firs_regular.className}`}
+            className={`text-sm lg:text-md text-justify text-relaxed ${firs_regular.className}`}
           >
             With Soft Energy, everyone can afford solar energy through our
             unique 12-month installment plan.

@@ -42,7 +42,7 @@ const CustomerSupport = () => {
             height={30}
           />
         </div>
-        <p className={`text-center font-medium ${firs_regular.className} `}>
+        <p className={`text-center font-medium ${firs_regular.className} text-sm lg:text-md leading-[25px]`}>
           Have questions or need assistance? Our dedicated support team is here
           to help you every step of the way.
         </p>

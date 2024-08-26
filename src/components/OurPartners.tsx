@@ -20,7 +20,7 @@ const OurPartners = () => {
       <MotionComponent
         as="h1"
         variants={fadeInVariants("down", 0.1, 0.5)}
-        className={`text-white pt-4 text-2xl lg:text-3xl text-center ${balgin_medium.className} `}
+        className={`text-white pt-4 text-xl lg:text-3xl text-center ${balgin_medium.className} `}
       >
         Our Partners
       </MotionComponent>
@@ -30,7 +30,7 @@ const OurPartners = () => {
           variants={fadeInVariants("right", 0.2, 0.5)}
           className="flex gap-x-4"
         >
-          <Image src={logo1} alt="" width={72} height={40} />
+          <Image className="h-16 w-40 lg:w-24" src={logo1} alt="" width={0} height={0} />
           <div className="space-y-1">
             <h1
               className={`bg-gradient-to-r from-[#7BECAB] via-white to-white bg-clip-text text-transparent text-xl ${balgin_medium.className} `}
@@ -50,7 +50,7 @@ const OurPartners = () => {
           variants={fadeInVariants("right", 0.1, 0.5)}
           className="flex gap-x-4"
         >
-          <Image src={logo2} alt="" width={72} height={40} />
+          <Image className="h-16 w-40 lg:w-24" src={logo2} alt="" width={0} height={0} />
           <div className="space-y-1">
             <h1
               className={`text-xl bg-gradient-to-r from-[#7BECAB] via-white to-white bg-clip-text text-transparent ${balgin_medium.className} `}

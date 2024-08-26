@@ -20,19 +20,19 @@ const Footer = () => {
         >
           About Soft Energy
         </h1>
-        <div className="grid grid-cols-[1fr] lg:grid-cols-[6fr_4fr] space-y-8 lg:space-y-0 gap-x-12 justify-items-center">
-          <div className="text-sm space-y-8 self-end text-justif lg:text-start leading-[25px]">
+        <div className="grid grid-cols-[1fr] lg:grid-cols-[6fr_4fr] space-y-12 lg:space-y-8 lg:space-y-0 gap-x-12 justify-items-center">
+          <div className="text-sm space-y-6 lg:space-y-8 self-end lg:text-start leading-[25px]">
             <MotionComponent
               as="p"
               variants={textVariants}
-              className={`${firs_regular.className}`}
+              className={`${firs_regular.className} text-center lg:text-start`}
             >
               SoftEnergy, a product of Soft KYC, is dedicated to making solar
               energy accessible and affordable for everyone. We provide
               innovative energy solutions that empower homes, businesses, and
               communities.
             </MotionComponent>
-            <p className={`space-x-2 ${firs_regular.className}`}>
+            <p className={`space-x-2 ${firs_regular.className} text-sm lg:text-md text-center lg:text-start`}>
               <span className={`${firs_medium.className}`}>Our Website:</span>
               <span className={`${firs_regular.className}`}>
                 [softenergy.ng](https://softenergy.ng)
