@@ -18,7 +18,7 @@ const CheckboxInput = ({
 }: checkboxInputType) => {
   return (
     <div>
-      <ul className="text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg">
+      <ul className="text-sm font-medium  bg-white border border-gray-200 rounded-lg">
         <li className="w-full border-b border-gray-200 rounded-t-lg">
           <div className="flex items-center px-3 ">
             <input
@@ -30,7 +30,7 @@ const CheckboxInput = ({
             />
             <label
               htmlFor={data.id}
-              className={`w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300  ${firs_regular.className}`}
+              className={`w-full py-3 ms-2 text-sm font-medium ${firs_regular.className}`}
             >
               {data.name} 
             </label>
