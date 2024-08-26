@@ -28,10 +28,9 @@ const Card = ({ data, animationDelay }: productType) => {
             {data.name}
           </h1>
           {data.des.map((data, index) => (
-            <div className="flex gap-x-2 items-center">
+            <div key={index} className="flex gap-x-2 items-center">
               <div className="w-2 h-2 rounded-full bg-black" />
               <p
-                key={index}
                 className={`disc firs-bold ${firs_regular.className}`}
               >
                 {data}
