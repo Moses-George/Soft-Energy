@@ -13,7 +13,7 @@ interface inputType {
 const InputField = ({ data, value, onchange }: inputType) => {
   return (
     <div>
-      <p className={`${firs_medium.className}`}>{data.label}</p>
+      <p className={`${firs_regular.className} font-[400]`}>{data.label}</p>
       <input
         className={`bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-gray-300 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ${firs_regular.className} `}
         type={data.inputType}

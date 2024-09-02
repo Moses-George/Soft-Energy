@@ -30,12 +30,12 @@ const OurPartners = () => {
           variants={fadeInVariants("right", 0.2, 0.5)}
           className="flex gap-x-4"
         >
-          <Image className="h-16 w-40 lg:w-24" src={logo1} alt="" width={0} height={0} />
+          <Image className="h-16 w-28 lg:w-16" src={logo1} alt="" width={0} height={0} />
           <div className="space-y-1">
             <h1
               className={`bg-gradient-to-r from-[#7BECAB] via-white to-white bg-clip-text text-transparent text-xl ${balgin_medium.className} `}
             >
-              J Tech
+              Soft KYC
             </h1>
             <p
               className={`text-white leadin-relaxed text-sm ${firs_regular.className} font-light max-w-md`}
@@ -50,7 +50,7 @@ const OurPartners = () => {
           variants={fadeInVariants("right", 0.1, 0.5)}
           className="flex gap-x-4"
         >
-          <Image className="h-16 w-40 lg:w-24" src={logo2} alt="" width={0} height={0} />
+          <Image className="h-16 w-28 lg:w-16" src={logo2} alt="" width={0} height={0} />
           <div className="space-y-1">
             <h1
               className={`text-xl bg-gradient-to-r from-[#7BECAB] via-white to-white bg-clip-text text-transparent ${balgin_medium.className} `}

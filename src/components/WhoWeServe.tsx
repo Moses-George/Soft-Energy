@@ -32,11 +32,11 @@ const data = [
 
 const WhoWeServe = () => {
   return (
-    <section className="py-8 px-4 lg:px-8 space-y-8 lg:space-y-16">
+    <section className="py-8 px-4 lg:px-8">
       <MotionComponent
         as="h1"
         variants={fadeInVariants("down", 0.1, 0.5)}
-        className={`text-xl lg:text-3xl text-center ${balgin_medium.className} `}
+        className={`text-xl lg:text-3xl text-center pb-20 ${balgin_medium.className} `}
       >
         Innovation and Customer Focus
       </MotionComponent>
@@ -52,13 +52,13 @@ const WhoWeServe = () => {
           <MotionComponent
             as="h2"
             variants={textVariants}
-            className={`text-xl hidden lg:block text-[#074942] ${balgin_medium.className} `}
+            className={`text-xl hidden font-[900] lg:block text-[#074942] ${balgin_medium.className} `}
           >
             Who we Serve
           </MotionComponent>
           <div className="space-y-8">
             {data.map((data, index) => (
-              <div key={index} className="flex items-center gap-x-2 lg:gap-x-8">
+              <div key={index} className="flex items-center font-[500] gap-x-2 lg:gap-x-4">
                 <MotionComponent
                   as="div"
                   variants={zoomInVariants((index + 1) / 10, 0.5)}
@@ -84,17 +84,17 @@ const WhoWeServe = () => {
         <MotionComponent
           as="div"
           variants={fadeInVariants("left", 0.1, 0.5)}
-          className="mx-auto row-start-1 row-end-3 lg:col-start-2 lg:col-end-3"
+          className="mx-auto my-auto row-start-1 row-end-3 lg:col-start-2 lg:col-end-3"
         >
           <Image
-            className="absolute w-60 h-60 lg:w-[27em] lg:h-[27rem]"
+            className="absolute w-60 h-60 lg:w-[25rem] lg:h-[25rem]"
             alt=""
             src={whoweareImg}
             width={0}
             height={0}
           />
           <Image
-            className="ml-2 mt-2 w-60 h-60 lg:w-[27em] lg:h-[27rem]"
+            className="ml-4 mt-2 w-60 h-60 lg:w-[25rem] lg:h-[25rem]"
             alt=""
             src={whoweareBg}
             width={0}

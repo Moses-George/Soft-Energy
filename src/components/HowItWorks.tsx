@@ -11,6 +11,7 @@ import {
   firs_light,
   balgin_medium,
   balgin_bold,
+  balgin_regular,
 } from "@/utils/font";
 
 const data = [
@@ -52,7 +53,7 @@ const HowItWorks = () => {
       >
         How it Works
       </h1>
-      <div className="lg:flex justify-cente w-full  gap-x-8 space-y-8 lg:space-y-0">
+      <div className="lg:flex justify-cente w-full gap-x-8 space-y-8 lg:space-y-0">
         <div className="bg-white lg:w-[50%] rounded-lg pl-4 pr-4 lg:pr-12 py-12">
           <div className="space-y-5">
             <div className="flex items-center gap-x-2 lg:gap-x-4">
@@ -64,8 +65,8 @@ const HowItWorks = () => {
                 height={0}
               />
               <p className={`text-sm lg:text-md ${firs_regular.className}`}>
-                Click the 'Get Started' button to express your interest in our
-                solar solutions.
+                Click the <span className="font-[500]">'Get Started'</span> button to express your
+                interest in our solar solutions.
               </p>
             </div>
             {data.map((data, index) => (
@@ -75,7 +76,7 @@ const HowItWorks = () => {
                   variants={fadeInVariants("down", (index + 1) / 10, 0.5)}
                 >
                   <Image
-                    className="w-8 h-8 animate-pulse"
+                    className="w-8 h-8 lg:w-10 lg:h-10 animate-pulse"
                     alt=""
                     src={data.icon}
                     width={0}
@@ -87,7 +88,7 @@ const HowItWorks = () => {
                   variants={fadeInVariants("right", (index + 1) / 10, 0.5)}
                   className="space-x-2 text-sm lg:text-md max-w-md"
                 >
-                  <span className={`leading-8 ${firs_bold.className}`}>
+                  <span className={`leading-8 ${balgin_medium.className}`}>
                     {data.header}
                   </span>
                   <span className={`${firs_regular.className}`}>
@@ -104,7 +105,7 @@ const HowItWorks = () => {
             alt=""
             width="0"
             height="0"
-            className="absolute -top-6 -left-10 "
+            className="absolute -top-20 -left-20 "
           />
           <MotionComponent as="div" variants={fadeInVariants("left", 0.1, 0.7)}>
             <Image
@@ -121,7 +122,7 @@ const HowItWorks = () => {
               <Image src={arrow} alt="" />
             </div>
             <p
-              className={`text-sm text-center lg:text-start ${firs_light.className} lg:max-w-[13rem]`}
+              className={`text-xs text-center lg:text-start ${firs_light.className} lg:max-w-[13rem]`}
             >
               Click the 'Get Started' button to express your interest in our
               solar solutions.

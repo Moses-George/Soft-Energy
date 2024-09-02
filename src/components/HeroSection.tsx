@@ -11,7 +11,7 @@ const HeroSection = () => {
   const router = useRouter();
 
   return (
-    <section className="grid grid-cols-[1fr] lg:grid-cols-[5fr_5fr] justify-items-center mx-auto gap-x-12 px-4 lg:px-10 py-8 lg:py-28">
+    <section className="grid grid-cols-[1fr] lg:grid-cols-[5.5fr_4.5fr] justify-items-center mx-auto gap-x-12 px-4 lg:px-10 py-8 lg:py-28">
       <div className="space-y-6 pb-8 lg:pb-0">
         <MotionComponent
           as="h1"
@@ -36,7 +36,7 @@ const HeroSection = () => {
             <button className="absolute b-0 py-2 text-white px-6 bg-[#074942] rounded-md transform active:scale-75 transition-transform">
               Get Started
             </button>
-            <button className="ml-1 b-0 py-[22px] px-16 bg-[#07494238] opacity-[22] rounded-md" />
+            <button className="ml-1 mt-1 b-0 py-[20px] px-[4.3rem] bg-[#07494238] opacity-[22] rounded-md" />
           </div>
         </div>
         <MotionComponent
@@ -49,7 +49,7 @@ const HeroSection = () => {
       </div>
       <div className="mx-aut lg:justify-self-end">
         <Image
-          className="w-[20rem] h-48 lg:w-[43rem] lg:h-[27rem]"
+          className="w-full h-48 w-full lg:h-[27rem]"
           src={HeroBg}
           alt=""
           width={0}

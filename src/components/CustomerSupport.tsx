@@ -35,7 +35,7 @@ const CustomerSupport = () => {
             Customer Support
           </h1>
           <Image
-            className=""
+            className="self-center"
             src={smilyFaceIcon}
             alt=""
             width={30}
@@ -49,13 +49,13 @@ const CustomerSupport = () => {
       </div>
       <div className="lg:flex gap-x-12 space-y-8 lg:space-y-0 justify-center">
         <Image
-          className="mx-auto lg:mx-0 w-64 h-60 lg:w-[20rem] lg:h-[18rem] lg:my-auto"
+          className="mx-auto lg:mx-0 w-64 h-60 lg:w-[18rem] lg:h-[16rem] lg:my-auto"
           src={maskGroup}
           alt=""
           width={0}
           height={0}
         />
-        <div className="space-y-4 lg:space-y-8 bg-[#7BECAB2E] py-6 lg:py-20 rounded-lg px-4 lg:pl-8 w-fit grid self-center">
+        <div className="space-y-4 lg:space-y-8 bg-[#7BECAB2E] py-6 lg:py-16 rounded-lg px-4 lg:pl-8 w-[32rem]  grid self-center">
           {data.map((data, index) => (
             <div key={index} className="flex items-center gap-x-4">
               <MotionComponent
@@ -63,7 +63,7 @@ const CustomerSupport = () => {
                 variants={zoomInVariants((index + 1) / 10, 0.5)}
               >
                 <Image
-                  className="w-4 h-4 lg:w-6 lg:h-6"
+                  className="w-4 h-4"
                   alt=""
                   src={data.icon}
                   width={0}
@@ -73,7 +73,7 @@ const CustomerSupport = () => {
               <MotionComponent
                 as="div"
                 variants={fadeInVariants("right", (index + 1) / 10, 0.5)}
-                className="space-x-2 lg:max-w-[80%] text-sm lg:text-md leading-relaxed firs-bold"
+                className="space-x-2 lg:max-w-[90%] text-sm lg:text-md leading-relaxed firs-bold"
               >
                 <span className={`text-md ${firs_bold.className}`}>
                   {data.header}

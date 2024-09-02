@@ -28,7 +28,7 @@ const SelectInput = ({ data, name, value, onchange }: selectInputType) => {
         value={value}
         onChange={onchange}
         required
-        className={`bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ${firs_regular.className}`}
+        className={`bg-gray-50 border border-gray-300 text-[#074942] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ${firs_regular.className}`}
       >
         <option selected>Choose a country</option>
         {data.options.map((data, id) => (

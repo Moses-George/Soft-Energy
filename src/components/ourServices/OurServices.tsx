@@ -22,7 +22,7 @@ const OurServices = () => {
       <MotionComponent
         as="h1"
         variants={fadeInVariants("down", 0.1, 0.5)}
-        className={` ${balgin_regular.className} text-xl lg:text-4xl text-center py-8 lg:py-16`}
+        className={` ${balgin_regular.className}  font-[500] text-xl lg:text-4xl text-center py-8 lg:py-16`}
       >
         Our Services
       </MotionComponent>

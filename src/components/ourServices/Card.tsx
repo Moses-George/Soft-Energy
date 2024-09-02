@@ -24,7 +24,7 @@ const Card = ({ header, text, icon, animationDelay }: CardPropType) => {
         width={0}
         height={0}
       />
-      <div className="pt-6 lg:py-12 px-4 lg:pl-6  lg:pr-8 space-y-4 pb-8 lg:pb-0">
+      <div className="lg:py-12 px-4 lg:pl-6  lg:pr-8 space-y-4 pb-8 lg:pb-12">
         <h2 className={` text-sm lg:text-[1rem] ${firs_bold.className} `}>{header}</h2>
         <p className={`text-gray-600 text-sm leading-7 ${firs_regular.className} `}>{text}</p>
       </div>

@@ -14,7 +14,7 @@ const Footer = () => {
         width={0}
         height={0}
       />
-      <div className="px-6 lg:px-32 space-y-6 -mt-4 lg:-mt-16">
+      <div className="px-6 lg:px-32 -mt-4 lg:-mt-16">
         <h1
           className={` ${balgin_regular.className} text-lg lg:text-2xl text-center lg:text-start`}
         >
@@ -39,7 +39,7 @@ const Footer = () => {
               </span>
             </p>
           </div>
-          <div className={`flex gap-x-20 ${firs_medium.className}`}>
+          <div className={`flex gap-x-20 font-[500] ${firs_medium.className}`}>
             <ul className="space-y-4">
               <li>Home</li>
               <li>Services</li>
